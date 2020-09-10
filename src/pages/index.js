@@ -1,22 +1,13 @@
-import Typography from "@material-ui/core/Typography";
-import Box from "@material-ui/core/Box";
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import FormLabel from "@material-ui/core/FormLabel";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import RadioGroup from "@material-ui/core/RadioGroup";
-import Radio from "@material-ui/core/Radio";
-import Paper from "@material-ui/core/Paper";
-import CardMedia from "@material-ui/core/CardMedia";
-import Card from "@material-ui/core/Card";
+
 import SmallCard from "../components/topIconSmall";
 import ImgMediaCard from "../components/topIconLarge";
 import CreateArea from "../keep/CreateArea";
 import { useState, useEffect } from "react";
-import Note from "../keep/Note";
-import { createNote, getNotes, db } from "../keep/firebase_actions";
+
 import Firebase from "firebase";
-import { Grid, CardHeader } from "@material-ui/core/";
+import { Grid  } from "@material-ui/core/";
 import "../components/layout.css";
 import NewNote from "../keep/NewNote";
 import SEO from "../components/seo";
@@ -42,7 +33,6 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 export default function Index() {
-  const [spacing, setSpacing] = React.useState(2);
 
   let [notes, setNotes] = useState([]);
 
@@ -118,7 +108,7 @@ export default function Index() {
         style={{ padding: "15px" }}
       >
         {notes.map((item) => (
-          <Grid item xs={6} sm={4} md={2}>
+          <Grid item xs={12} sm={4} md={3}>
             <NewNote
               key={item.id}
               id={item.id}
