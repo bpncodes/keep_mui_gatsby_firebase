@@ -10,6 +10,7 @@
     "babel-plugin-styled-components": "^1.11.1",
     "firebase": "^7.19.1",
     "gatsby": "latest",
+    "gatsby-plugin-manifest": "^2.4.28",
     "gatsby-plugin-material-ui": "latest",
     "gatsby-plugin-react-helmet": "latest",
     "gatsby-plugin-styled-components": "^3.3.10",
