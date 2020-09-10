@@ -22,11 +22,13 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/public/apple-touch-icon.png`, // This path is relative to the root of the site.
+        icon: `src/public/android-chrome-512x512.png`, // This path is relative to the root of the site.
       },
     },
   ],
   siteMetadata: {
-    title: "My page",
+    title: "BpnsKeep",
+    description: `I code and design`,
+    author: `@bpnscode`,
   },
 };

@@ -19,6 +19,7 @@ import Firebase from "firebase";
 import { Grid, CardHeader } from "@material-ui/core/";
 import "../components/layout.css";
 import NewNote from "../keep/NewNote";
+import SEO from "../components/seo";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -64,6 +65,7 @@ export default function Index() {
   const classes = useStyles();
   return (
     <Grid container style={{ marginTop: 20 }}>
+      <SEO title="Home" />
       <Grid item xs={1} sm={2}></Grid>
       <Grid item xs={10} sm={8}>
         <Grid item>
