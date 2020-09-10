@@ -1,0 +1,27 @@
+{
+  "name": "gatsby",
+  "version": "4.0.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "latest",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.56",
+    "@material-ui/styles": "latest",
+    "babel-plugin-styled-components": "^1.11.1",
+    "firebase": "^7.19.1",
+    "gatsby": "latest",
+    "gatsby-plugin-material-ui": "latest",
+    "gatsby-plugin-react-helmet": "latest",
+    "gatsby-plugin-styled-components": "^3.3.10",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-helmet": "latest",
+    "styled-components": "^5.2.0"
+  },
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
+  }
+}
