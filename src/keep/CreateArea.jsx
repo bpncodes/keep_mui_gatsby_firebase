@@ -52,6 +52,15 @@ function CreateArea(props) {
   }
 
   function submitNote(event) {
+    const correctPassword = 'MySecretPassword123';
+    const userInput = prompt('Enter your password:');
+    if (userInput === correctPassword) {
+      console.log("NICE!");
+    } else {
+      console.log("Don't add stuff!");
+      return;
+    }
+
     if (note.title === "" || note.content === "") {
       setOpen(true);
       return;
